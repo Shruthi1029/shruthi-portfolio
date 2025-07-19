@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shruthi | Backend Developer & QA Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+    <!-- Onboarding Animation Screen -->
+<div id="onboarding">
+  <h1>👩‍💻 Hi, I’m <span class="name">Shruthi Kadali</span></h1>
+</div>
+
+<!-- Your existing content goes here -->
+<div id="main-content" style="display:none;">
+  <!-- Include your existing header, hero, sections etc. -->
+</div>
+
+  <header class="hero">
+    <nav>
+      <div class="logo">Shruhti Kadali</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content" data-aos="fade-up">
+      <div class="text">
+        <h1>Backend & QA Engineer</h1>
+        <p>Building logic. Breaking bugs. Working mostly in the dark—literally and in code.</p>
+        <div class="buttons">
+          <a href="#contact" class="btn primary">Hire Me</a>
+          <button class="btn secondary" onclick="downloadResume()">Download Resume</button>
+        </div>
+      </div>
+      <div class="illustration">
+        <img src="9700_4_04.jpg" alt="Cartoon dev" />
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Bridging Logic and Quality — I'm a passionate Backend Developer & QA Engineer who loves writing clean code and breaking bad ones. From building robust APIs to ensuring bug-free releases, I bring precision, performance, and perfection to every line of work.</p>
+  </section>
+
+  <section id="skills" class="section" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span>
+      <span>Django</span>
+      <span>Selenium</span>
+      <span>REST APIs</span>
+      <span>PHP</span>
+      <span>Laravel</span>
+      <span>Manual Testing</span>
+      <span>Automation</span>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section" data-aos="fade-up">
+    <h2>Got a project in mind?</h2>
+    <form id="contactForm"action="https://formspree.io/f/mgvzvjdk"method="POST">
+        
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="Your email" required />
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message 🚀</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <!-- Footer / Social Links Section -->
+<section id="social-links" style="text-align: center; padding: 2rem; background-color: #0e0e0e;">
+  <h2 style="color: #fff;">Let's Connect</h2>
+  <div style="margin-top: 1rem;">
+    <a href="https://www.linkedin.com/in/shruthi-kadali-b75993361/" target="_blank" style="margin: 0 1rem;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30" style="filter: invert(1);">
+    </a>
+    <a href="https://github.com/shruthi2916" target="_blank" style="margin: 0 1rem;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="30" height="30" style="filter: invert(1);">
+    </a>
+    <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" style="margin: 0 1rem;">
+      <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Naukri" width="30" height="30">
+    </a>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

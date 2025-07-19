@@ -1,0 +1,180 @@
+:root {
+  --bg: #0e0e2c;
+  --text: #f2f2f2;
+  --accent: #1de9b6;
+  --secondary: #2e2e66;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--secondary);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content .text h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+.hero-content img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.primary {
+  background-color: var(--accent);
+  color: #000;
+}
+
+.secondary {
+  background-color: #444;
+  color: white;
+}
+
+/* SECTION */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-grid span {
+  background-color: #1a1a3d;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* CONTACT */
+.contact-section form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #1f1f3b;
+  color: white;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: var(--accent);
+  color: black;
+  padding: 0.75rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary);
+}
+
+footer .socials {
+  margin-top: 1rem;
+}
+
+footer .socials a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+#onboarding {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0e0e2c, #1f1f3b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #00ffcc;
+  font-size: 2rem;
+  z-index: 9999;
+  animation: fadeOut 1s ease-in-out 5s forwards;
+}
+
+#onboarding .name {
+  color: #ff79c6;
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
