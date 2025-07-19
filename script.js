@@ -25,3 +25,32 @@ window.addEventListener('load', () => {
     document.getElementById('main-content').style.display = 'block';
   }, 5000); // Match the fadeOut duration
 });
+const form = document.getElementById("contactForm");
+const status = document.getElementById("formStatus");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      status.textContent = "✅ Message sent successfully!";
+      form.reset();
+    } else {
+      status.textContent = "❌ Failed to send. Please try again.";
+    }
+  } catch (error) {
+    status.textContent = "❌ Error occurred. Try again.";
+    console.error(error);
+  }
+});
+
