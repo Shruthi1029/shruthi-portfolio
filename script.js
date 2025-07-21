@@ -16,7 +16,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 function downloadResume() {
   const link = document.createElement("a");
   link.href = "resume.pdf"; // Change to your resume file
-  link.download = "Devella_Resume.pdf";
+  link.download = "Shruthi_Kadali_Resume.pdf";
   link.click();
 }
 window.addEventListener('load', () => {
