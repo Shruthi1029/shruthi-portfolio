@@ -15,7 +15,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "resume.pdf"; // Change to your resume file
+  link.href = "Shruthi_Kadali_Resume.pdf"; // Change to your resume file
   link.download = "Shruthi_Kadali_Resume.pdf";
   link.click();
 }
