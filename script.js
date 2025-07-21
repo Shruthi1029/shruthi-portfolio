@@ -17,7 +17,9 @@ function downloadResume() {
   const link = document.createElement("a");
   link.href = "Shruthi_Kadali_Resume.pdf"; // Change to your resume file
   link.download = "Shruthi_Kadali_Resume.pdf";
+  document.body.appendChild(link);
   link.click();
+  document.body.removeChild(link);
 }
 window.addEventListener('load', () => {
   setTimeout(() => {
