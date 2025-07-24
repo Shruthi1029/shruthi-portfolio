@@ -16,6 +16,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.logo img {
+  height: 80px;
+  object-fit: contain;
+  align-items: center;
+}
 
 /* NAVIGATION */
 nav {
@@ -24,12 +29,12 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   background: var(--secondary);
+  align-content: center;
+  overflow: auto;
+  
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+
 
 .nav-links {
   list-style: none;
@@ -41,6 +46,8 @@ nav {
 .hero {
   text-align: center;
   padding: 4rem 2rem;
+  
+  
 }
 
 .hero-content {
@@ -48,11 +55,13 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  
 }
 
 .hero-content .text h1 {
   font-size: 2.5rem;
   color: var(--accent);
+  
 }
 
 .hero-content img {
@@ -160,21 +169,68 @@ footer .socials a {
   z-index: 9999;
   animation: fadeOut 1s ease-in-out 5s forwards;
 }
-
-#onboarding .name {
+.typewriter {
+  display: inline-block;
   color: #ff79c6;
-  font-weight: bold;
   font-size: 2.5rem;
-  animation: pulse 2s infinite;
+  font-weight: bold;
+  white-space: nowrap;
+  border-right: 2px solid #ff79c6;
+  overflow: hidden;
+  animation: typing 2.5s steps(20) 1s 1 normal both, blink 0.7s infinite;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
 @keyframes fadeOut {
   to { opacity: 0; visibility: hidden; }
 }
+#projects {
+  padding: 2rem;
+}
+
+.project {
+  background: linear-gradient(145deg, #1e1e2f, #2b2b3d);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px #378878;
+  border: 1px solid #5cf5d7;
+}
+
+.project h3 {
+  color:#00ffcc;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.project ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.project li::marker {
+  color: #00ffcc;
+}
+
+
 

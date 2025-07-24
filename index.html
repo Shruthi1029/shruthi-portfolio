@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shruthi | Backend Developer & QA Engineer</title>
+<title>Portfolio Website</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 <body>
     <!-- Onboarding Animation Screen -->
 <div id="onboarding">
-  <h1>👩‍💻 Hi, I’m <span class="name">Shruthi Kadali</span></h1>
+  <h1> <span class="typewriter">Shruthi Kadali</span></h1>
 </div>
 
 <!-- Your existing content goes here -->
@@ -20,9 +22,10 @@
 
   <header class="hero">
     <nav>
-      <div class="logo">Shruhti Kadali</div>
+      <div class="logo"><img src="logo.png"></div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -60,6 +63,41 @@
       <span>Automation</span>
     </div>
   </section>
+  <section id="projects" class="section" data-aos="fade-up">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>📱 QR Menu System</h3>
+    <ul>
+      <li>Built a contactless menu system using dynamically generated QR codes.</li>
+      <li>Developed a Django Admin panel to manage menus easily in under 5 mins.</li>
+      <li>Integrated <strong>QR code automation</strong> using <code>qrcode</code> and <code>Pillow</code>.</li>
+      <li>Improved hygiene and efficiency post-COVID, cutting staff workload by 40%.</li>
+      <li><strong>Tech:</strong> Python Django, HTML, CSS, JavaScript</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>🤖 Daily Report Automation (Slack + Python)</h3>
+    <ul>
+      <li>Automated employee daily goals & recaps collection via Slack API.</li>
+      <li>Replaced manual data tracking, saving 2–3 hours/day for managers.</li>
+      <li>Calculated working hours from timestamps for accurate attendance.</li>
+      <li><strong>Tech:</strong> Python, Slack API, Automation AI</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>📊 Attendmark - Performance Report Automation</h3>
+    <ul>
+      <li>Automated fetching performance reports from Stackify via Automa AI.</li>
+      <li>Filtered and emailed customized reports to stakeholders in 2 mins.</li>
+      <li>Saved 10+ hours/month by eliminating manual report generation.</li>
+      <li><strong>Tech:</strong> PHP (Laravel), DBeaver, Slack</li>
+    </ul>
+  </div>
+</section>
+
 
   <section id="contact" class="section contact-section" data-aos="fade-up">
     <h2>Got a project in mind?</h2>
@@ -84,9 +122,10 @@
     <a href="https://github.com/shruthi1029" target="_blank" style="margin: 0 1rem;">
       <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="30" height="30" style="filter: invert(1);">
     </a>
-    <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" style="margin: 0 1rem;">
-      <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="Naukri" width="30" height="30">
-    </a>
+    <a href="mailto:shruthikadaliofficial@gmail.com" target="_blank" style="margin: 0 1rem;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" width="30" height="30" style="filter: invert(1);">
+</a>
+
   </div>
 </section>
 
